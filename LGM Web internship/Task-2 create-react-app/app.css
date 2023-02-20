@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image:radial-gradient(#1505f8,black);
+}
+header 
+{
+    background-color:rgb(170, 7, 170);
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:3px solid black;
+}
+
+header img 
+{
+    visibility: hidden;
+}
+
+header:hover img 
+{
+    visibility: visible;
+    transition: 0.8s;
+    transform: translateX(18vw);
+}
+
+header h1 
+{
+    font-size: 35px;
+    font-weight: 700;
+    user-select: none;
+    color: rgb(252, 236, 7);
+    text-shadow: 2px 5px 6px darkblue;
+}
+
+header button 
+{
+    padding: 9px 25px;
+    font-size: 20px;
+    background-color: rgb(240, 9, 136);
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border:2px solid black;
+}
+
+header button:hover 
+{
+    color: black;
+    background-color: yellow;
+}
+
+.cards 
+{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card 
+{
+    padding: 15px;
+    margin: 20px;
+    height: 250px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #00C9FF 0%, rgb(104, 104, 172) 100%);
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    border-radius: 15px;
+    border:2px solid black;
+    box-shadow: 2px 3px 4px 4px;
+    transition: 0.1s ease-out;
+    
+}
+
+.card:hover 
+{
+    background: linear-gradient(90deg,rgb(212, 212, 98)  0%, #03f51b 100%);
+    color: rgb(8, 8, 8);
+    transform: scale(1.1);
+}
+
+.card .profile-image img 
+{
+    height: 150px;
+    border-radius: 65%;
+    border:2px solid black;
+    
+}
+.card .card-content h3 
+{
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+
+.card .card-content h2 
+{
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+}
+.load{
+    color: white;
+    font-size: 40px;
+}

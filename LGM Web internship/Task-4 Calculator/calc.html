@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="calc.css"> 
+</head>
+<body>
+<div>
+<form name="calculator">
+    <table>
+        <div>
+        <tr>
+            <td colspan="3"><input name="display" class="screen" value="0"></td>
+            <td><button type="button" value="C" onclick="this.form.display.value = 0 ">C</button></td>
+        </tr>
+        </div>
+        <div>
+        <tr>                                    
+            <td><button type="button" value="1" onclick="add_value(this.form.display, '1')" class="spaceleft">1</button></td>
+            <td><button type="button" value="2" onclick="add_value(this.form.display, '2')" class="number">2</button></td>
+            <td><button type="button" value="3" onclick="add_value(this.form.display, '3')" class="number">3</button></td>
+            <td><button type="button" value="+" onclick="add_value(this.form.display, '+')" class="main">+</button></td>
+        </tr>
+        </div> 
+        <div>
+        <tr>                                   
+            <td><button type="button" value="4" onclick="add_value(this.form.display, '4')"  class="spaceleft">4</button></td>
+            <td><button type="button" value="5" onclick="add_value(this.form.display, '5')" class="number">5</button></td>
+            <td><button type="button" value="6" onclick="add_value(this.form.display, '6')"  class="number">6</button></td>
+            <td><button type="button" value="*" onclick="add_value(this.form.display, '*')">*</button></button></td>
+        </tr>
+        </div>
+        <div>
+        <tr>
+            <td><button type="button" value="7" onclick="add_value(this.form.display, '7')"  class="spaceleft">7</button></td>
+            <td><button type="button" value="8" onclick="add_value(this.form.display, '8')"  class="number">8</button></td>
+            <td><button type="button" value="9" onclick="add_value(this.form.display, '9')"  class="number">9</button></td>
+            <td><button type="button" value="/" onclick="add_value(this.form.display, '/')">/</button></td>
+        </tr> 
+        </div> 
+        <div>
+        <tr>
+            <td><button type="button" value="." onclick="add_value(this.form.display, '.')" class="space">.</button></td>
+            <td><button type="button" value="0" onclick="add_value(this.form.display, '0')"  class="number">0</button></td>
+            <td><button type="button" value="=" onclick="if (checkNum(this.form.display.value)) { answere(this.form) }">=</button></td>
+            <td><button type="button" value="-" onclick="add_value(this.form.display, '-')">-</button></td>
+        </tr>
+        </div> 
+    </table>
+         
+</form>
+</div>
+    <script src="calc.js"></script>
+</body>
